@@ -1,63 +1,95 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Vite Template</title>
-  </head>
-  <body>
-		<div class="wrapper">
-			<div class="main">
-				<header class="main__header">
-					<div class="main__switch switch">
-						<div class="switch__box">
-							<input type="checkbox" id="switch">
-							<label for="switch"></label>
-						</div>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Hlegal</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="head">
+			<header class="head__header header">
+				<div class="container header__container">
+					<!-- 1 -->
+					<div class="header__inner">
+						<ul class="header__lang">
+							<li class="header__lang-item">
+								<a class="header__lang-link active" href="#">EN</a>
+							</li>
+							<li class="header__lang-item">
+								<a class="header__lang-link" href="#">PL</a>
+							</li>
+							<li class="header__lang-item">
+								<a class="header__lang-link" href="#">UA</a>
+							</li>
+						</ul>
+						<span class="dotted dotted--white"></span>
+
+						<address class="header__address">Kyiv, Mechnikova str., 14/1</address>
+						<span class="dotted dotted--white"></span>
+
+						<a class="header__phone" href="tel:+380800211927">0800 211 927</a>
+						<span class="dotted dotted--white"></span>
+
+						<a class="header__social" href="#">
+							<svg class="header__social-svg">
+								<use href="/src/img/icons/sprites.svg#facebook"></use>
+							</svg>
+						</a>
 					</div>
-				</header>
+					<!-- 2 -->
+					<div class="header__box">
+						<!-- logo -->
+						<div class="header__box-hlegal">
+							<a class="header__box-logo" href="#">
+								<img src="/src/img/icons/logo-white.svg" alt="Hlegal" width="70" height="32">
+							</a>
 
-				<div class="container">
-					<a class="main__logo" href="https://vitejs.dev/" target="_blank">
-						<picture>
-							<source srcset="/src/img/webp/logo-vite.webp" type="image/webp">
-							<img class="main__logo-img" src="/src/img/logo-vite.png" alt="logo-vite" width="300" height="300">
-						</picture>
-					</a>
-	
-					<h1 class="main__title title"><span>Vite</span> <br>simple starter markup template</h1>
-		
-					<ul class="main__badges badges">
-						<li class="badges__item">
-							<a class="badges__link" href="https://www.npmjs.com/package/autoprefixer" target="_blank">autoprefixer</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link" href="https://www.npmjs.com/package/imagemin" target="_blank">imagemin</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link" href="https://www.npmjs.com/package/imagemin-webp" target="_blank">imagemin-webp</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link" href="https://www.npmjs.com/package/postcss-sort-media-queries" target="_blank">postcss-sort-media-queries</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link" href="https://sass-lang.com" target="_blank">SCSS</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link" href="https://github.com/FatehAK/vite-plugin-image-optimizer" target="_blank">vite-plugin-image-optimizer</a>
-						</li>
-						<li class="badges__item">
-							<a class="badges__link no-link" href="#">CSS Reset</a>
-						</li>
-					</ul>
+							<!-- <svg>
+								<use href="src/img/icons/sprites.svg#slash"></use>
+							</svg>
+
+							<span>services</span> -->
+						</div>
+						<!-- burger -->
+						<button class="header__box-burger">
+							<span></span>
+						</button>
+					</div>
+					<!-- 3 -->
+					<nav class="header__nav">
+						<div class="header__nav-close"></div>
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="#">about us</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="#">services</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="#">team</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="#">publications</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link" href="#">contact</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-			</div>
-			<footer class="footer">
-				<div class="container">Made with ❤ by <a href="https://github.com/Grinch3214/vite-builder" target="_blank">Max</a></div>
-			</footer>
-		</div>
+			</header>
 
-    <script type="module" src="./src/js/main.js"></script>
-  </body>
+			<h1 class="head__title">you legal solutions provider</h1>
+
+			<a class="head__link" href="#"></a>
+		</div>
+	</div>
+
+	<script type="module" src="./src/js/main.js"></script>
+</body>
+
 </html>

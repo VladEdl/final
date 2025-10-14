@@ -1,57 +1,51 @@
-@use "mixins" as m;
+@use 'vars' as v;
+// @use 'vars';
 
-html {
-  font-size: 8px;
-  @include m.viewport-md {
-    font-size: 10px;
-  }
-}
 body {
-  font-family: "Montserrat";
-  background: var(--main-color);
-  color: var(--main-text-color);
-  font-size: 2.4rem;
-  transition: background 0.2s ease, color 0.2s ease;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  background-color: aqua;
 }
-
 .wrapper {
-  min-height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-flow: column;
+  background: v.$gradient-supersoft;
 }
 
 .container {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
+  padding: 0 30px;
 
-.dark {
-  color-scheme: dark;
-}
+  @media screen and (min-width: v.$breakpoint-md) {
+    max-width: 708px;
+    margin: 0 auto;
+  }
 
-.title {
-  font-size: 4rem;
+  @media screen and (min-width: v.$breakpoint-lg) {
+    max-width: 964px;
+  }
 
-  span {
-    font-size: 5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    @include m.text-gradient;
+  @media screen and (min-width: v.$breakpoint-xl) {
+    max-width: 1380px;
+  }
+
+  @media screen and (min-width: v.$breakpoint-xxl) {
+    max-width: 1660px;
   }
 }
 
-.footer {
-  padding: 3rem 0;
-  font-size: 1.6rem;
+.dotted {
+  width: 6px;
+  height: 6px;
+  display: none;
+  border-radius: v.$rounded-full;
 
-  a {
-    text-decoration: none;
-    color: var(--brand-color);
-    transition: 0.2s ease;
-    &:hover {
-      color: var(--brand-light-color);
-    }
+  @media screen and (min-width: v.$breakpoint-md) {
+    display: inline-block;
   }
+}
+
+.dotted--white {
+  background: v.$white-color;
+}
+
+.dotted--gray {
+  background: v.$text-color;
 }
