@@ -639,3 +639,27 @@ body {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+.page-services .head {
+    background: #323264;
+    min-height: auto; 
+}
+
+.page-services .head {
+    display: block; 
+    justify-content: normal;
+}
+
+.page-services .wrapper {
+    background: #323264;
+}
+
+.page-services .main {
+    background: #323264;
+}
+
+@media (min-width: 768px) {
+    .page-services .do > h3 {
+        text-align: left;
+    }
+}
